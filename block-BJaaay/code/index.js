@@ -17,9 +17,10 @@ for(let i = 0; i < 10; i = i + 1){
     console.log(i)
 }
 // Calculate the sum of all numbers from 1 to 10.
+let value = 0;
 for(let s = 0; s < 10; s = s+1){
-    console.log(s)
-}
+    value = s + 1
+}console.log(value)
 // Log all the values from 1 to 10 using while loop
 let v = 0
 while(v < 10){
