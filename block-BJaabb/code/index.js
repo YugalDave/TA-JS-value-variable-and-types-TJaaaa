@@ -64,8 +64,8 @@ Example:
 var num1 = prompt("Enter first number");
 var num2 = prompt("Enter second number");
 
-if(num1 && num2){
-    alert("true or false base on the entered value");
+if(isNaN(num1) || isNaN(num2)){
+    alert("enter a valid number");
 }else{
-    alert("enter a valid number")
+    alert(num1 === num2);
 }
