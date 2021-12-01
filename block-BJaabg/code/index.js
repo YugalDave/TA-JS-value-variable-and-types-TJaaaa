@@ -21,9 +21,15 @@ while(bank_balance > amount) {
         amount += ACCESSORY_PRICE;
     }
 }
-const finalBill = (amount + amount * TAX_RATE).toFixed(2)
+const finalBill = (amount + amount * TAX_RATE).toFixed(2);
 
-console.log(finalBill)
+console.log(finalBill);
+
+if(finalBill > bank_balance){
+    console.log(`you can afford`);
+} else {
+    console.log(`you can't afford `);
+}
 
 
 
